@@ -8,6 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send('Este es un mensaje de ejemplo desde la ruta GET');
+});
+
 app.use('/api', emailRoutes);
 
 
