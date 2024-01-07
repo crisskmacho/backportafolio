@@ -12,8 +12,8 @@ const enviarCorreo = async(req, res) => {
     });
 
     const mailOptions = {
-        from: emailAddress,
-        to: process.env.EMAIL_USER,
+        from: process.env.EMAIL_USER,
+        to: 'cristianduvang12@hotmail.com',
         subject: emailSubject,
         text: `Nombre: ${fullName}\nEmail: ${emailAddress}\nTeléfono: ${mobileNumber}\nMensaje: ${message}`,
     };
